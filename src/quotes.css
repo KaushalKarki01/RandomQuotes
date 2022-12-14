@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+  }
+
+.quoteGenerator{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5e5;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('./assets/quoteswp.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.container{
+    background: transparent;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+}
+
+.container div{
+    color: #fff;
+    width: 100%;
+    height: 300px;
+    padding: 1rem 2rem;
+}
+
+.container h2{
+    font-weight: 400;
+}
+
+.container p{
+    text-align: right;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+button{
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    border:none;
+    border:2px solid #fff;
+    border-radius: 1.25rem;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: transparent;
+    color: #fff;
+}
+
+@media screen and (max-width:700px){
+    .container{
+        width: 100%;
+    }
+
+    .container div{
+        height: fit-content;
+    }
+}
+
